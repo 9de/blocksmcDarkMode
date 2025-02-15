@@ -11,7 +11,8 @@ Current version: 0.1.0-beta
    - [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
    - [Firefox](https://addons.mozilla.org/firefox/addon/styl-us/)
    - [Opera](https://addons.opera.com/extensions/details/stylus/)
-2. [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/9de/blocksmcDarkMode/main/theme.user.css)
+2. 
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://github.com/9de/blocksmcDarkMode/raw/refs/heads/main/style.user.css)
 
 ## Development
 
