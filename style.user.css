@@ -1,12 +1,14 @@
-    /* ==UserStyle==
-    @name           blocksmc custom design
-    @namespace      github.com/9de
-    @version        0.1.0-beta
-    @description    A custom theme for blocksmc
-    @author         blocksmc
-    @license        MIT
-    @preprocessor   stylus
-    ==/UserStyle== */
+/* ==UserStyle==
+@name blocksmc Custom Design
+@namespace https://github.com/9de
+@homepageURL https://github.com/9de/blocksmcDarkMode
+@supportURL https://github.com/9de/blocksmcDarkMode/issues
+@version 0.1.0-beta
+@updateURL https://github.com/9de/blocksmcDarkMode/raw/master/style.user.css
+@description  Dark Theme + design for blocksmc
+@author Turki
+@license MIT
+==/UserStyle== */
 
 @-moz-document url-prefix("https://blocksmc.com/") {
     /* Base Styles */
