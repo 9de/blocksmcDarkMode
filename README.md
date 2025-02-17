@@ -10,6 +10,8 @@
 
 A sleek, modern dark theme for BlocksMC that enhances the visual experience while maintaining functionality. This theme provides better contrast, reduced eye strain, and a more modern appearance.
 
+
+## 👀 Theme Preview
 <details>
 <summary>🏠 Homepage</summary>
 <div align="center">
@@ -19,8 +21,8 @@ A sleek, modern dark theme for BlocksMC that enhances the visual experience whil
       <td align="center"><strong>After</strong></td>
     </tr>
     <tr>
-      <td><img src="assets/previous/HomeBefore.png" alt="Homepage Before" width="400"/></td>
-      <td><img src="assets/previous/homeAfter.png" alt="Homepage After" width="400"/></td>
+      <td><img src="assets/previews/HomeBefore.png" alt="Homepage Before" width="400"/></td>
+      <td><img src="assets/previews/homeAfter.png" alt="Homepage After" width="400"/></td>
     </tr>
   </table>
 </div>
@@ -35,8 +37,8 @@ A sleek, modern dark theme for BlocksMC that enhances the visual experience whil
       <td align="center"><strong>After</strong></td>
     </tr>
     <tr>
-      <td><img src="assets/previous/PlayerInfoBefore.png" alt="Player Info Before" width="400"/></td>
-      <td><img src="assets/previous/PlayerInfoAfter.png" alt="Player Info After" width="400"/></td>
+      <td><img src="assets/previews/PlayerInfoBefore.png" alt="Player Info Before" width="400"/></td>
+      <td><img src="assets/previews/PlayerInfoAfter.png" alt="Player Info After" width="400"/></td>
     </tr>
   </table>
 </div>
@@ -51,8 +53,8 @@ A sleek, modern dark theme for BlocksMC that enhances the visual experience whil
       <td align="center"><strong>After</strong></td>
     </tr>
     <tr>
-      <td><img src="assets/previous/GuildListBefore.png" alt="Guild List Before" width="400"/></td>
-      <td><img src="assets/previous/GuildListAfter.png" alt="Guild List After" width="400"/></td>
+      <td><img src="assets/previews/GuildListBefore.png" alt="Guild List Before" width="400"/></td>
+      <td><img src="assets/previews/GuildListAfter.png" alt="Guild List After" width="400"/></td>
     </tr>
   </table>
 </div>
@@ -67,8 +69,8 @@ A sleek, modern dark theme for BlocksMC that enhances the visual experience whil
       <td align="center"><strong>After</strong></td>
     </tr>
     <tr>
-      <td><img src="assets/previous/GuildMemberListBefore.png" alt="Guild Member List Before" width="400"/></td>
-      <td><img src="assets/previous/GuildMemberListAfter.png" alt="Guild Member List After" width="400"/></td>
+      <td><img src="assets/previews/GuildMemberListBefore.png" alt="Guild Member List Before" width="400"/></td>
+      <td><img src="assets/previews/GuildMemberListAfter.png" alt="Guild Member List After" width="400"/></td>
     </tr>
   </table>
 </div>
@@ -85,8 +87,8 @@ A sleek, modern dark theme for BlocksMC that enhances the visual experience whil
       <td align="center"><strong>After</strong></td>
     </tr>
     <tr>
-      <td><img src="assets/previous/StoreMainPageBefore.png" alt="Store Main Page Before" width="400"/></td>
-      <td><img src="assets/previous/StoreMainPageAfter.png" alt="Store Main Page After" width="400"/></td>
+      <td><img src="assets/previews/StoreMainPageBefore.png" alt="Store Main Page Before" width="400"/></td>
+      <td><img src="assets/previews/StoreMainPageAfter.png" alt="Store Main Page After" width="400"/></td>
     </tr>
   </table>
 </div>
@@ -101,8 +103,8 @@ A sleek, modern dark theme for BlocksMC that enhances the visual experience whil
       <td align="center"><strong>After</strong></td>
     </tr>
     <tr>
-      <td><img src="assets/previous/storeproductlistbefore.png" alt="Store Product List Before" width="400"/></td>
-      <td><img src="assets/previous/storeproductlistafter.png" alt="Store Product List After" width="400"/></td>
+      <td><img src="assets/previews/storeproductlistbefore.png" alt="Store Product List Before" width="400"/></td>
+      <td><img src="assets/previews/storeproductlistafter.png" alt="Store Product List After" width="400"/></td>
     </tr>
   </table>
 </div>
