@@ -3,7 +3,7 @@
 @namespace https://github.com/9de
 @homepageURL https://github.com/9de/blocksmcDarkMode
 @supportURL https://github.com/9de/blocksmcDarkMode/issues
-@version 0.1.2-beta
+@version 0.1.3-beta
 @updateURL https://github.com/9de/blocksmcDarkMode/raw/refs/heads/main/style.user.css
 @description Dark theme and design for BlocksMC
 @author Turki
@@ -19,39 +19,78 @@ body {
     flex-direction: column;
     margin: 0;
 }
+
 /* Minecraft Font*/
 @font-face {
-    font-family: Minecraftia;
+    font-family: "Minecraftia";
     src: url("https://cdn.blocksmc.cloud/upload/minecraftia.ttf");
-
 }
 
-/*Arabic IBM PLEX Font*/
+/* Arabic IBM PLEX Font */
 @fonr-face {
-font-family: 'IBM Plex Sans Arabic';
-src: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Noto+Sans+Arabic:wght@700&display=swap');
+    font-family: 'IBM Plex Sans Arabic';
+    src: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Noto+Sans+Arabic:wght@700&display=swap');
 }
 
 
 /* Typography */
-h1, h2, h3, h4, h5, p, label, a, span, td, .btn-warning, .btn-default {
-    font-family: "Minecraftia", "IBM Plex Sans Arabic", sans-serif;
+h1, h2, h3, h4, h5, p, label, a, span, td, input, textarea, select, 
+.jumbotron, .profile-game-card, .chat, .store-card-price, .store-card-title, 
+.store-card-btn, .h-btns, .alert-info, .alert, .table, 
+#pressCMW, #enableBtn, .btn, header, .col-md-6, center {
+    font-family: "Minecraftia", "monospace", "IBM Plex Sans Arabic" !important;
 }
 
+
+input,
+textarea,
+select {
+    background-color: #1f2937 !important;
+    color: #A9B1D6 !important;
+    border: 2px solid #2F3142 !important;
+    border-radius: 4px !important;
+    outline: none !important;
+    padding: 8px 12px !important;
+    box-shadow: 0 0 0 0 rgba(88, 101, 242, 0) !important;
+    transition: all 0.2s ease !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #5865F2 !important;
+    box-shadow: 0 0 0 2px rgba(88, 101, 242, 0.25),
+    0 0 8px rgba(88, 101, 242, 0.1) !important;
+}
+
+/* 
+THE 'C_C' DIV ELEMENT DISPLAYS A COOKIE ALERT SINCE THE 3RD PARTY TRACKER LIKE GOOGLE WILL COLLECT COOKIES, 
+WHETHER YOU ACCEPT IT OR NOT. THEREFORE, THERE IS NO POINT IN SHOWING IT TO THE USER.
+Proof: https://prnt.sc/hxeY_Hli01W9
+*/
+
+.navbar-brand-text, .header br, .news-time, .sub-header p,
+.sub-header-top, div#c_c {
+    display: none !important;
+}
+
+
 /* Navigation */
-.navbar {
+.navbar, .footer-rights {
     background-color: #2C5282;
 }
 
 .navbar-brand img {
-    transform: translateY(1px) translateX(-7px);
+    transform: translateY(4px) translateX(-9.5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-/* Hide the 'BlocksMC' text in the navbar, as it doesn't look good. */
-.navbar-brand-text {
-    display: none;
+.navbar-brand img:hover {
+    transform: translateY(-3px) translateX(-9.5px);
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
 }
+
 
 /* Dropdown Menu */
 .dropdown-menu {
@@ -131,9 +170,7 @@ h1, h2, h3, h4, h5, p, label, a, span, td, .btn-warning, .btn-default {
     -webkit-text-fill-color: transparent;
 }
 
-.header br {
-    display: none !important;
-}
+
 
 /* Buttons */
 .h-btns {
@@ -148,7 +185,6 @@ h1, h2, h3, h4, h5, p, label, a, span, td, .btn-warning, .btn-default {
     transition: background-color 0.3s ease;
     display: inline-flex;
     align-items: center;
-    font-family: "Minecraftia", sans-serif;
     font-size: 1.2rem;
     white-space: nowrap;
     margin: 4px 8px;
@@ -210,9 +246,6 @@ label {
     color: #A9B1D6;
 }
 
-.news-time {
-    display: none !important;
-}
 
 .news-title-cont {
     display: flex;
@@ -293,39 +326,13 @@ label {
     top: 85px;
 }
 
-.sub-header p,
-.sub-header-top {
-    display: none !important;
-}
+
 
 /* Forms */
 .form-control::placeholder {
     color: #A9B1D6;
     opacity: 1;
 }
-
-input,
-textarea,
-select {
-    background-color: #1f2937 !important;
-    color: #A9B1D6 !important;
-    border: 2px solid #2F3142 !important;
-    border-radius: 4px !important;
-    outline: none !important;
-    padding: 8px 12px !important;
-    box-shadow: 0 0 0 0 rgba(88, 101, 242, 0) !important;
-    font-family: "Minecraftia", sans-serif !important;
-    transition: all 0.2s ease !important;
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-    border-color: #5865F2 !important;
-    box-shadow: 0 0 0 2px rgba(88, 101, 242, 0.25),
-    0 0 8px rgba(88, 101, 242, 0.1) !important;
-}
-
 
 
 /* Alerts */
@@ -349,7 +356,6 @@ select:focus {
     padding: 1rem !important;
     border-radius: 6px !important;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
-    font-family: "Minecraftia", sans-serif !important;
 }
 
 .alert-info strong {
@@ -369,7 +375,6 @@ select:focus {
     padding: 1rem !important;
     border-radius: 6px !important;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
-    font-family: "Minecraftia", sans-serif !important;
 }
 
 .alert.alert-danger strong {
@@ -386,7 +391,6 @@ select:focus {
 .table thead td,
 .table thead th {
     color: #A9B1D6;
-    font-family: "Minecraftia", sans-serif;
     background-color: #1A1C2E;
 }
 
@@ -406,7 +410,6 @@ tbody td {
 #enableBtn:disabled {
     background-color: #5865F2;
     color: #fff;
-    font-family: "Minecraftia", sans-serif;
 }
 
 #enableBtn:not(:disabled) {
@@ -435,7 +438,6 @@ tbody td {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
     color: white !important;
     cursor: pointer !important;
-    font-family: "Minecraftia", sans-serif;
     font-size: 14px !important;
     font-weight: 500 !important;
     margin: 20px auto !important;
@@ -460,7 +462,6 @@ tbody td {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
     color: white !important;
     cursor: pointer !important;
-    font-family: "Minecraftia", sans-serif;
     font-size: 14px !important;
     font-weight: 500 !important;
     max-width: 200px !important;
@@ -475,14 +476,6 @@ tbody td {
     transform: translateY(-1px);
 }
 
-/* 
-THE 'C_C' DIV ELEMENT DISPLAYS A COOKIE ALERT SINCE THE 3RD PARTY WILL COLLECT COOKIES, 
-WHETHER YOU ACCEPT IT OR NOT. THEREFORE, THERE IS NO POINT IN SHOWING IT TO THE USER.
-Proof: https://prnt.sc/hxeY_Hli01W9
-*/
-div#c_c {
-    display: none !important;
-}
 
 /* Footer */
 .footer,
@@ -494,10 +487,6 @@ div#c_c {
     padding: 20px 0;
 }
 
-.footer-rights {
-    background-color: #2C5282;
-}
-
 
 /* Cloudflare error */
 .bg-gradient-gray {
@@ -505,25 +494,14 @@ div#c_c {
     background-color: #1A1B26 !important
 }
 
-.inline-block,
-.clearfix {
+.inline-block, .clearfix, header.mx-auto.pt-10 div, .cf-error-footer, .code-label {
     color: #A9B1D6
 }
 
 
-header.mx-auto.pt-10 div {
-    font-family: "Minecraftia", sans-serif;
-    color: #A9B1D6
-}
-
-.cf-error-footer {
-    color: #A9B1D6
-}
-
-.code-label {
+ .code-label {
     text-align: center !important;
     background-color: #1A1B26;
-    color: #A9B1D6
 }
 
 
@@ -773,7 +751,6 @@ tr:has(td .rank-player-border) td:nth-child(2) a span {
 
 @-moz-document url-prefix("https://blocksmc.com/players") {
 /*Players list Section*/
-
 /* Owners Section */
 .sep:first-of-type ~ .player-card p {
     color: #FFD700 !important;
@@ -795,7 +772,6 @@ tr:has(td .rank-player-border) td:nth-child(2) a span {
 
 @-moz-document regexp("^https:\\/\\/blocksmc\\.com\\/(friends|guilds)(\\/.+)?$") {
 /*Friends or Guild List Section*/
-
 .nav-tabs {
     display: flex !important;
     justify-content: center !important;
@@ -843,8 +819,7 @@ span[style*="color:#2fcd50"] {
 }
 
 @-moz-document regexp("^https:\\/\\/blocksmc\\.com\\/(support|rules|general-terms|privacy-policy)$") {
-/* Support, rules, generaal terms*/
-
+/* Support, rules, general terms*/
 /* Nav tabs styling */
 .nav-tabs .nav-link.active {
     background-color: #2d2e42 !important;
@@ -858,9 +833,12 @@ span[style*="color:#2fcd50"] {
 }
 
 .container {
-    max-width: 50%; /* Adjust width as needed */
-    margin: auto; /* Center horizontally */
-    padding-top: 50px; /* Push down from navbar */
+    max-width: 50%;
+    /* Adjust width as needed */
+    margin: auto;
+    /* Center horizontally */
+    padding-top: 50px;
+    /* Push down from navbar */
     color: #A9B1D6;
 }
 
@@ -930,7 +908,6 @@ center {
     color: #A9B1D6;
     font-size: 1.2rem;
     margin: 1rem 0 0 0;
-    font-family: "Minecraftia";
     padding: 0.5rem 1.2rem;
     border-radius: 9999px;
 }
@@ -954,7 +931,6 @@ h1[dir="ltr"] {
 
 /* Ensure text appears even if player_username class fails to load */
 h1[dir="ltr"] {
-    font-family: "Minecraftia", monospace;
     font-weight: normal;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     letter-spacing: 0.05em;
@@ -1021,7 +997,6 @@ h1[dir="ltr"] > a:hover {
     border-radius: 9999px;
     padding: 0.5rem 1.2rem;
     background-color: #202020 !important;
-    font-family: sans-serif;
     transition: all 0.2s ease;
     display: inline-block;
 }
@@ -1129,10 +1104,7 @@ h1[dir="ltr"] > a:hover {
     border-bottom: none;
 }
 
-.profile-game-card ul li .key,
-.profile-game-card ul li .val {
-    font-family: "Minecraftia", sans-serif;
-}
+
 
 .profile-game-card ul li .key {
     color: #A9B1D6;
@@ -1156,7 +1128,6 @@ h1[dir="ltr"] > a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
     color: white !important;
     cursor: pointer !important;
-    font-family: "Minecraftia", sans-serif !important;
     font-size: 14px !important;
     font-weight: 500 !important;
     margin: 20px auto !important;
@@ -1362,7 +1333,6 @@ tbody tr th {
     border-radius: 8px;
     max-width: 1200px;
     margin: 20px auto;
-    font-family: system-ui, sans-serif;
 }
 
 /* Message rows */
@@ -1396,7 +1366,6 @@ tbody tr th {
     color: #787C9C;
 
     font-size: 0.85em;
-    font-family: 'Minecraftia', monospace !important;
     /* Minecraftia with fallback */
 }
 
@@ -1516,7 +1485,6 @@ ul[role="tablist"] .nav-item {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: white;
     cursor: pointer;
-    font-family: "Minecraftia", sans-serif;
     font-size: 14px;
     font-weight: 500;
     margin: 20px auto;
@@ -1574,7 +1542,6 @@ ul[role="tablist"] .nav-item {
 }
 
 .store-card-title {
-    font-family: "Minecraftia", sans-serif;
     color: #A9B1D6;
     font-size: 14px;
     text-align: center;
@@ -1590,7 +1557,6 @@ ul[role="tablist"] .nav-item {
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     color: #FFFFFF;
-    font-family: "Minecraftia", sans-serif;
     font-size: 12px;
     font-weight: 700;
     line-height: 18px;
@@ -1606,7 +1572,6 @@ ul[role="tablist"] .nav-item {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: white;
     cursor: pointer;
-    font-family: "Minecraftia", sans-serif;
     font-size: 14px;
     font-weight: 500;
     margin: 15px auto;
@@ -1646,7 +1611,6 @@ ul[role="tablist"] .nav-item {
 
 /* Modal Footer Buttons */
 .modal-footer .btn {
-    font-family: "Minecraftia", sans-serif;
     border-radius: 6px;
     padding: 8px 20px;
     font-size: 14px;
@@ -1689,7 +1653,6 @@ ul[role="tablist"] .nav-item {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: white;
     cursor: pointer;
-    font-family: "Minecraftia", sans-serif;
     font-size: 16px;
     font-weight: 600;
     margin: 20px 0;
@@ -1699,7 +1662,7 @@ ul[role="tablist"] .nav-item {
 }
 /* Buy button hover */
 .col-md-6 button:hover {
-   background-color: #4752C4;
+    background-color: #4752C4;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px);
 }
@@ -1736,6 +1699,7 @@ ul[role="tablist"] .nav-item {
 }
 
 @-moz-document url("https://blocksmc.com/store/checkout") {
+
 .jumbotron .btn-primary {
     background-color: #5865F2;
     border: none;
@@ -1743,7 +1707,6 @@ ul[role="tablist"] .nav-item {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: white;
     cursor: pointer;
-    font-family: "Minecraftia", sans-serif;
     font-size: 14px;
     font-weight: 500;
     margin: 20px auto;
@@ -1760,14 +1723,64 @@ ul[role="tablist"] .nav-item {
     transform: translateY(-6px);
 }
 
+.input-group-btn1 .btn.btn-danger {
+    position: relative;
+    display: flex;           
+    justify-content: center;   
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 14px;
+    margin: 15px auto;
+    max-width: 200px;
+    padding: 10px 24px;
+    transition: all 0.2s ease;
+    width: calc(100% - 30px);
+}
+
+.input-group-btn1 .btn.btn-danger:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
+.btn.btn-default {
+    position: relative;
+    background-color: darkred; 
+    display: flex;           
+    justify-content: center; 
+    align-items: center; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 14px;
+    margin: 15px auto;
+    max-width: 200px;
+    padding: 10px 24px;
+    transition: all 0.2s ease;
+    width: calc(100% - 30px);
+}
+.btn.btn-default::before {
+    content: "All";
+    padding-left: 4px;
+}
+
+.btn.btn-default:hover {
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
+.card {
+    background: none !important;
+}
 
 .card-block {
-    background-color: #2A2B3C
-}
-
-.card-block h2 {
+    background-color: #2A2B3C;
     color: #9699B0
 }
+
 
 .card-block input[type="image"] {
     width: 250px;
@@ -1919,7 +1932,6 @@ ul[role="tablist"] .nav-item {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: white;
     cursor: pointer;
-    font-family: "Minecraftia", sans-serif;
     font-size: 14px;
     font-weight: 500;
     margin: 20px auto;
