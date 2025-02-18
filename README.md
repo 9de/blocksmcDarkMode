@@ -3,7 +3,7 @@
 <div align="center">
 
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://github.com/9de/blocksmcDarkMode/raw/refs/heads/main/style.user.css)
-![Version](https://img.shields.io/badge/version-0.1.1--beta-blue)
+![Version](https://img.shields.io/badge/version-0.1.3--beta-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 </div>
