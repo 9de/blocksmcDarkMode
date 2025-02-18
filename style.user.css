@@ -1326,6 +1326,8 @@ tbody tr th {
 }
 
 @-moz-document url-prefix("https://blocksmc.com/chatreport") {
+/* Chatreport Page*/
+
 .chat {
     background: #1A1B26;
     color: #A9B1D6;
@@ -1369,13 +1371,17 @@ tbody tr th {
     /* Minecraftia with fallback */
 }
 
-/* Username column */
+/* Server column */
 .chat > div > p.col-md-1 {
+    all: unset; /* Reset styles completely */
     flex: 0 0 100px;
     color: #6B8AFD;
     font-weight: 500;
     font-size: 0.95em;
+    font-family: 'Minecraftia', monospace !important;
+    white-space: nowrap;
 }
+    
 
 /* Message content column */
 .chat > div > p.col-md-8 {
@@ -1502,6 +1508,8 @@ ul[role="tablist"] .nav-item {
 }
 
 @-moz-document url-prefix("https://blocksmc.com/store") {
+/* Store Page */
+
 .store-card,
 .store-card-top,
 .store-card-title,
@@ -1699,7 +1707,7 @@ ul[role="tablist"] .nav-item {
 }
 
 @-moz-document url("https://blocksmc.com/store/checkout") {
-
+/* Store Checkout Page */
 .jumbotron .btn-primary {
     background-color: #5865F2;
     border: none;
@@ -1818,6 +1826,8 @@ ul[role="tablist"] .nav-item {
 }
 
 @-moz-document url-prefix("https://blocksmc.com/modapply") {
+/* Modapply Page */
+
 .jumbotron h4 {
     text-align: center
 }
